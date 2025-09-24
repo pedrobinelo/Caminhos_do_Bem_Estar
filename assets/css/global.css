@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ------------------------------- Configurações compartilhadas ------------------------------------- */
+body,
+main,
+#main-content,
+.block,
+.block-img,
+.big-text-div,
+.medium-text-div,
+#logo-div,
+header,
+#header-div,
+#footer-div,
+#footer-nav,
+#footer-social-media,
+.footer-sm-link {
+  display: flex;
+}
+
+body,
+header,
+#main-content,
+.block-img,
+.medium-text-div,
+#footer-nav {
+  flex-direction: column;
+}
+
+#logo-div,
+#footer-social-media,
+.footer-sm-link,
+main,
+.big-text-div,
+.medium-text-div,
+.block-img {
+  justify-content: center;
+}
+
+body,
+header,
+.block {
+  justify-content: space-between;
+}
+
+body,
+#site-title,
+.big-text,
+.block-text,
+.md-text-div-h3,
+.medium-text {
+  margin: 0;
+}
+
+#logo-div,
+header,
+#footer-social-media,
+.footer-sm-link,
+main,
+.big-text-div,
+.medium-text-div,
+.block-img {
+  align-items: center;
+}
+
+.block,
+#footer-nav,
+#footer-social-media {
+  gap: 10px;
+}
+
+#site-title,
+.footer-link,
+.big-text-div,
+.block,
+.medium-text-div {
+  color: white;
+}
+
+.footer-link:hover,
+.social_media_logo:hover,
+#logo-div img:hover {
+  transform: scale(1.1);
+}
+
+#site-title:hover,
+.footer-link:hover,
+.social_media_logo:hover,
+#logo-div img:hover {
+  transition: transform 0.3s;
+}
+
+.block,
+#footer-nav,
+.footer-link {
+  text-decoration: none;
+}
+
+.big-text-div,
+.medium-text {
+  font-size: 1rem;
+}
+
+main,
+#main-content,
+.big-text-div,
+.medium-text-div,
+footer {
+  width: 100%;
+}
+
+.big-text-div,
+.medium-text-div,
+.md-text-div-h3 {
+  text-align: center;
+}
+
+.big-text-div,
+.block,
+.medium-text-div,
+#modal,
+footer {
+  font-family: "Quicksand", sans-serif;
+}
+
+.big-text,
+.medium-text,
+#footer-social-media img {
+  width: 80%;
+}
+
+#modal-content,
+.medium-text {
+  text-align: justify;
+}
+
+/* ------------------------------- Configurações únicas ------------------------------------- */
+
+body {
+  min-height: 100vh;
+  background: #998eff;
+  background: radial-gradient(
+    circle,
+    rgba(153, 142, 255, 1) 0%,
+    rgba(84, 68, 230, 1) 100%
+  );
+}
+
+#main-content {
+  gap: 20px;
+}
+
+/* Caminhos do Bem-Estar */
+#site-title {
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+}
+
+#site-title:hover {
+  transform: scale(1.05);
+}
+
+/* Logo - Lotus */
+#logo-div img {
+  width: 40px;
+}
+
+header {
+  background: #8f65ca;
+  background: linear-gradient(
+    1deg,
+    rgba(143, 101, 202, 1) 0%,
+    rgba(64, 1, 140, 1) 100%
+  );
+  border-bottom: 2px solid white;
+  padding: 20px 15px;
+  gap: 10px;
+}
+
+#header-div {
+  gap: 16px;
+}
+
+/* Botão - Voltar ao início */
+#back-button {
+  background-color: #968eda;
+  border-radius: 5px;
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+#back-button:hover {
+  background-color: #b3a9f9;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: background-color 0.3s;
+}
+
+#back-button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+}
+
+#main-content {
+  margin: 30px 0;
+}
+
+footer {
+  border-top: 2px solid white;
+  background: #8f65ca;
+  background: linear-gradient(
+    1deg,
+    rgba(143, 101, 202, 1) 0%,
+    rgba(64, 1, 140, 1) 100%
+  );
+  /* z-index: 1; */
+}
+
+#footer-div {
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Instagram e WhatsApp */
+#footer-social-media {
+  flex-direction: row;
+  width: 30%;
+}
+
+/* Blocos pretos */
+.blocks-div {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.block {
+  font-size: 0.85rem;
+  margin: 10px;
+  padding: 10px;
+  background: #3c3b3b;
+  background: linear-gradient(
+    360deg,
+    rgba(60, 59, 59, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border: 1px solid white;
+}
+
+.block:hover {
+  box-shadow: inset 0 0 0 3px #ffd900;
+  transition: box-shadow 0.3s, transform 0.5s;
+}
+
+.md-text-div-h3 {
+  font-size: 1.25rem;
+  color: #ffd900;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  padding-bottom: 4px;
+}
+
+.footer-link:hover {
+  font-weight: bold;
+  border-bottom: 4px solid white;
+}
+
+/* Modal */
+#modal {
+  margin: 0 20px;
+}
+
+.modal-list li {
+  text-align: left;
+  text-wrap: balance;
+  margin-bottom: 6px;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list li {
+  text-align: left;
+}
+
+.list li::before {
+  content: "▫️ "; /* ou qualquer símbolo, emoji, etc */
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  header,
+  #footer-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header {
+    justify-content: space-evenly;
+  }
+
+  #footer-nav {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #footer-social-media {
+    width: 20%;
+    gap: 0;
+  }
+
+  #footer-social-media img {
+    width: 50%;
+  }
+
+  .big-text,
+  .medium-text {
+    width: 70%;
+  }
+
+  .block {
+    font-size: 1rem;
+  }
+
+  .big-text {
+    font-size: 1.25rem;
+  }
+
+  .medium-text,
+  #footer-nav {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .big-text,
+  .medium-text {
+    width: 50%;
+  }
+
+  .block {
+    gap: 20px;
+  }
+
+  .big-text,
+  .md-text-div-h3 {
+    font-size: 1.25rem;
+  }
+
+  .medium-text {
+    font-size: 1.15rem;
+  }
+
+  #footer-nav,
+  .block {
+    font-size: 1.05rem;
+  }
+
+  #site-title {
+    font-size: 1.85rem;
+  }
+
+  #logo-div img {
+    width: 50px;
+  }
+
+  #footer-social-media {
+    width: 15%;
+  }
+
+  #footer-social-media img {
+    width: 35%;
+  }
+}

@@ -1,0 +1,9 @@
+/* ------------------------------- Configurações compartilhadas ------------------------------------- */
+
+/* ------------------------------- Configurações únicas ------------------------------------- */
+#index-header {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}

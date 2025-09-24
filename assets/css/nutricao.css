@@ -1,0 +1,21 @@
+main,
+.big-text-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content {
+    font-family: "Quicksand", sans-serif;
+    width: 70%;
+}
+
+.big-text {
+    text-transform: uppercase;
+}
+
+.block-text {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
